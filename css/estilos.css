@@ -1,0 +1,75 @@
+
+body{
+    background-color: #edf3f3;
+    color: #0e2445;
+}
+
+
+.autor{
+    background-color: #edf3f3;
+}
+
+.btn-outline-secondary{
+    color: #0e2445;
+
+}
+.btn-outline-secondary a:hover{
+    color: #edf3f3;
+    background-color: #edf3f3;
+
+}
+.articulo{
+    text-align: justify;
+}
+
+.fuente{
+    font-size: xx-small;
+    text-align: right;
+    line-height: 1.3em;
+}
+
+.container-fluid.encabezado {
+    background-color: #516179;
+    background: no-repeat center 100% url(../images/encabezado_back.jpg);
+    max-height: 183px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom:30px;
+    padding-top: 30px;
+    width: 100%;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+.navbar-collapse {
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+ }
+
+/* @media (min-width: 992px)
+.navbar-collapse {
+    z-index: 1000;
+    /* background-color: #ffffff;/ 
+} */
+
+img.rounded-circle.img-thumbnail.top-content.center {
+ margin-top: -50px;
+    margin-left: 31%;
+}
+
+h4.card-title.mb-0 {
+    font-size: 1em;
+}
+p.card-text.mb-0 {
+    font-size: .8em;
+}
+small.text-muted {
+    font-size: .7em;
+}
+img.rounded-circle.img-thumbnail.autor-a {
+    margin-top: 1.5em;
+}

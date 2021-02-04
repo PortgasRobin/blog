@@ -1,0 +1,67 @@
+{"blog":[
+       {
+          "articulo":{
+             "id":"101",
+             "titulo":"Contratación paso a paso",
+             "imagen":"1.jpg",
+             "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",
+             "tags_articulo":"contratación, nuevo sueldo",
+             "autor":{
+                "id":"01",
+                "nombre_autor":"Maleni Carnejo",
+                "imagen_autor":"autor-1.png",
+                "empresa_autor":"Licenciada en Pedagogía",
+                "state":"North Dakota"
+             },
+             "reacciones":{
+                "likes":"85",
+                "comments":8    ,
+                "views":138
+             }
+          }
+       },
+       {
+        "articulo":{
+           "id":"102",
+           "titulo":"5 pasos para tener éxito en tu entrevista de trabajo",
+           "imagen":"2.jpg",
+           "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",
+           "tags_articulo":"contratación, nuevo sueldo",
+           "autor":{
+              "id":"01",
+              "nombre_autor":"Joe Black",
+              "imagen_autor":"autor-2.png",
+              "empresa_autor":"Licenciada en Pedagogía",
+              "state":"North Dakota"
+           },
+           "reacciones":{
+              "likes":"98",
+              "comments":13    ,
+              "views":189
+           }
+        }
+     },
+     
+     {
+        "articulo":{
+           "id":"103",
+           "titulo":"¡No lo hagas! evita estos puntos para tener un mejor cv",
+           "imagen":"3.jpg",
+           "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",
+           "tags_articulo":"contratación, nuevo sueldo",
+           "autor":{
+              "id":"01",
+              "nombre_autor":"Erick Garcia",
+              "imagen_autor":"autor-3.png",
+              "empresa_autor":"Licenciada en Pedagogía",
+              "state":"North Dakota"
+           },
+           "reacciones":{
+              "likes":"101",
+              "comments":16 ,
+              "views":215
+           }
+        }
+     }
+    ]
+ }
