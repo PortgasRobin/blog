@@ -32,14 +32,16 @@ const descargarBlog = new Promise((resolve, reject) => {
 
 function listarBlog(articulos) {
   console.log('articulos h: ' + articulos);
+  let html_div = `<div class="row row-cols-1 row-cols-md-3 g-4" >`;
   let html = '';
+  let html_end_div = `</div>`;
   let articulo_home = '';
 
   
   articulos.forEach(articulo => {
     console.log(articulo);
 
-    html += `
+    /* html += `
     <div class="card me-3">
           <img src="images/${articulo.articulo.imagen_articulo}" class=" card-img-top" alt="...">
           <div class="card-body" >
@@ -62,22 +64,41 @@ function listarBlog(articulos) {
           </div>
         </div>
     
+    `; */
+
+    html+=`
+          <div class="col">
+            <div class="card h-100">
+            <img src="images/${articulo.articulo.imagen_articulo}" class=" card-img-top" alt="...">
+              <div class="card-body">
+              <img src="images/${articulo.articulo.imagen_autor}" class="rounded-circle img-thumbnail top-content center" alt="..." style="max-width: 80px; height: auto;">
+                <h5 class="card-title"><button type="button"  id="${articulo.articulo.id_articulo}" class="card-title boton-titulo" onclick="verArticulo(this)">| ${articulo.articulo.titulo_articulo}</button></h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <div class="row align-items-center text-muted">
+                  <div class="col">
+                    <small class="fas fa-heart"> ${articulo.articulo.likes} </small>
+                  </div>
+                  <div class="col">
+                    <small class="fas fa-comment"> ${articulo.articulo.comments} </small>
+                  </div>
+                  <div class="col">
+                    <small class="fas fa-eye"> ${articulo.articulo.views} </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     `;
-
-
-    //articulo_home+= `<img src="images/${articulos.b.imagen}" class="card-img-top" alt="...">`;
-
 
   });
 
   
-  //articulo_home+= `<img src="images/${articulos.articulo.imagen}" class="card-img-top" alt="...">`;
-
-
-
+let tarjetas= `<div class="row row-cols-1 row-cols-md-3 g-4" >${html} </div>`;
 
   const contenedorApp = document.querySelector('#card_article');
-  contenedorApp.innerHTML = html;
+  contenedorApp.innerHTML = tarjetas;
 
   /* const contenedorArticuloH = document.querySelector('#articulo_home');
   contenedorArticuloH.innerHTML = articulo_home; */
@@ -93,6 +114,57 @@ function listarBlog(articulos) {
   myObj.ver_articulo_detalle(f); */
 }
 
+
+function verArticulosAutor(artautores, id) {
+ 
+  let html_autor = '';
+  console.log(id);
+  console.log('articulos autor: ' + artautores);
+
+  
+  const articulo = artautores.filter(articulo => {
+    return articulo.articulo.id_autor === id;
+  });
+
+ /*  const articulo = artautores.filter(auto => articulo.articulo.id_autor === id); */
+
+  console.log(articulo);
+
+    /* html_autor = `
+    <div class="card me-3">
+          <img src="images/${[].articulo.imagen_articulo}" class=" card-img-top" alt="...">
+          <div class="card-body" >
+            <img src="images/${[].articulo.imagen_autor}" class="rounded-circle img-thumbnail top-content center" alt="..." style="max-width: 80px; height: auto;">
+            <h5 class="card-title"><button type="button"  id="${[].articulo.id_articulo}" class="card-title boton-titulo" onclick="verArticulo(this)">| ${[].articulo.titulo_articulo}</button></h5>
+            <p class="card-text text-end .fs-6 texto">${[].articulo.nombre_autor}</p>
+          </div>
+          <div class="card-footer">
+            <div class="row align-items-center text-muted">
+              <div class="col">
+                <small class="fas fa-heart"> ${[].articulo.likes} </small>
+              </div>
+              <div class="col">
+                <small class="fas fa-comment"> ${[].articulo.comments} </small>
+              </div>
+              <div class="col">
+                <small class="fas fa-eye"> ${[].articulo.views} </small>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    `; */
+
+ /*  }); */
+
+  
+
+
+  const contenedorArticulosAutor = document.querySelector('#card_article');
+  contenedorArticulosAutor.innerHTML = html_autor;
+
+}
+
 function verArticuloInicio(f) {
   let id = f;
   console.log(id);
@@ -103,6 +175,12 @@ function verArticulo(comp) {
   let id = comp.id;
   console.log(id);
   myObj.ver_articulo_detalle(id);
+}
+
+function verAutor(aut) {
+  let id = aut.id;
+  console.log(id);
+  myObj.ver_articulos_autor(id);
 }
 
 function verDetalle(articulos, id) {
@@ -127,7 +205,7 @@ function verDetalle(articulos, id) {
     </div>
     <div class="col-md-8">
       <div class="card-body mx-auto" >
-        <h4 class="card-title mb-0">${articulo.articulo.nombre_autor}</h4>
+        <h4 class="card-title mb-0">${articulo.articulo.nombre_autor} <button type="button"  id="${articulo.articulo.id_autor}" class="card-title boton-titulo" onclick="verAutor(this)">| ${articulo.articulo.nombre_autor}</button></h4>
         <p class="card-text mb-0">${articulo.articulo.titulo_autor}</p>
         <p class="card-text mb-0"><small class="text-muted">${articulo.articulo.empresa_autor}</small></p>
       </div>
@@ -188,6 +266,17 @@ var myObj = {
     descargarBlog
       .then(
         detalle => verDetalle(detalle, id),
+        error => console.error(
+          new Error('Hubo un error' + error)
+        )
+      );
+
+
+  },
+  ver_articulos_autor: function(id) {
+    descargarBlog
+      .then(
+        artautor => verArticulosAutor(artautor, id),
         error => console.error(
           new Error('Hubo un error' + error)
         )
