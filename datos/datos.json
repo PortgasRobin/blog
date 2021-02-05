@@ -1,7 +1,7 @@
 {"blog":[
        {
           "articulo":{
-             "id":"101",
+             "id":"1",
              "titulo":"Contratación paso a paso",
              "imagen":"1.jpg",
              "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",
@@ -22,7 +22,7 @@
        },
        {
         "articulo":{
-           "id":"102",
+           "id":"2",
            "titulo":"5 pasos para tener éxito en tu entrevista de trabajo",
            "imagen":"2.jpg",
            "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",
@@ -44,7 +44,7 @@
      
      {
         "articulo":{
-           "id":"103",
+           "id":"3",
            "titulo":"¡No lo hagas! evita estos puntos para tener un mejor cv",
            "imagen":"3.jpg",
            "texto_articulo":"A menudo, encontramos en los profesionales del sector que han tenido éxito, la mejor inspiración para comenzar a creer en nuestras posibilidades y hacer realidad lo que algún día se nos pasó por la cabeza hacer. Muchos de ellos son hoy una referencia y guía para otros profesionales. Philip Kotler, Peter Druker, Steve Jobs, etc, son algunos de esas figuras del marketing y de la empresa que han pronunciado frases mágicas para motivarnos en momento dado.",

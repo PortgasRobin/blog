@@ -85,8 +85,18 @@ function listarBlog(articulos) {
   y.style.display = "none";
   const z = document.getElementById("encabezadoDetalle");
   z.style.display = "none"; */
+
+  /* 
+  let f=2;
+  //verArticuloInicio(f);
+  myObj.ver_articulo_detalle(f); */
 }
 
+function verArticuloInicio(f) {
+  let id = f;
+  console.log(id);
+  myObj.ver_articulo_detalle(id);
+}
 
 function verArticulo(comp) {
   let id = comp.id;
@@ -162,7 +172,6 @@ function verDetalle(articulos, id) {
 
 var myObj = {
   init: function() {
-
     descargarBlog
       .then(
         listar => listarBlog(listar),
@@ -184,6 +193,7 @@ var myObj = {
 
 
   },
+  
 
 
 }
