@@ -8,6 +8,7 @@ $DBhost = "174.136.25.34";
   
   $DBcon = new PDO("mysql:host=$DBhost;dbname=$DBname",$DBuser,$DBpass);
   $DBcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $DBcon->exec("set names utf8");
   
  }catch(PDOException $ex){
   

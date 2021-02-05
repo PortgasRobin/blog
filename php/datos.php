@@ -6,7 +6,7 @@ require_once 'dbconfig.php';
  FROM
  ARTICULOS a, AUTORES a2, REACCIONES r
  WHERE a.id_autor = a2.id_autor AND a.id_reaccion =r.id_reaccion 
- ORDER BY a.id_articulo limit 12";
+ ORDER BY a.id_articulo desc limit 12";
 /* 
 $query = "SELECT * FROM ARTICULOS"; */
  
@@ -20,39 +20,6 @@ $query = "SELECT * FROM ARTICULOS"; */
  $userData['blog'][][articulo]= $row;
  }
  
- //echo ($userData);
- //var_dump($userData);
- //echo ($row);
- //$xml = simplexml_load_string($userData);
-
-  /* print_r('<pre>');
-     print_r($xml);
-     print_r('</pre>');
-     echo "<br>";
-
-     $json=json_encode($xml, true);
-     $objeto = json_decode($json, true);
-     $items = $objeto['SOLICITUD'];
-    
-     $items2 = $objeto['PAQUETES'];
-     echo json_encode($items);
-     echo json_encode($items2);
-
-     $array_data = json_decode(json_encode(simplexml_load_string($userData)), true);
-
-     print_r('<pre>');
-     print_r($array_data);
-     print_r('</pre>'); */
-
-  
-
-
- 
- // echo $items[2]['CLAVE']; // BW
- // echo $items[2]['NOMBRE']; //BMW
- // echo $items[2]['VALOR']; // VACIO
-
-
- echo json_encode($userData);
+ echo json_encode($userData,JSON_UNESCAPED_UNICODE);
 
  ?>

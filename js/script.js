@@ -73,7 +73,7 @@ function listarBlog(articulos) {
               <div class="card-body">
               <img src="images/${articulo.articulo.imagen_autor}" class="rounded-circle img-thumbnail top-content center" alt="..." style="max-width: 80px; height: auto;">
                 <h5 class="card-title"><button type="button"  id="${articulo.articulo.id_articulo}" class="card-title boton-titulo" onclick="verArticulo(this)">| ${articulo.articulo.titulo_articulo}</button></h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text text-end .fs-6 texto">${articulo.articulo.nombre_autor}</p>
               </div>
               <div class="card-footer">
                 <div class="row align-items-center text-muted">
