@@ -73,3 +73,11 @@ small.text-muted {
 img.rounded-circle.img-thumbnail.autor-a {
     margin-top: 1.5em;
 }
+
+.boton-titulo {
+    border: hidden;
+    background: none;
+    text-align: left;
+    font-weight: inherit;
+    outline: none;
+}
