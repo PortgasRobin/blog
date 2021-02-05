@@ -98,7 +98,7 @@ img.rounded-circle.img-thumbnail.autor-a {
     color: #ffffff;
     font-family: 'Palanquin Dark', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
@@ -106,14 +106,14 @@ a.nav-link {
     color: #ffffff;
     font-family: 'Palanquin Dark', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 a.nav-link.active {
     color: #ffffff;
     font-family: 'Palanquin Dark', sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
@@ -123,4 +123,18 @@ a.nav-link.active {
 
 .navbar-light .navbar-toggler-icon {
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%255, 255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+.footerN{
+
+    background-color: #05274c; height: 25px; ;
+    
+
+}
+.footerN.col-12 a {
+    color: #ffffff;
+    text-align: center;
+    padding-top: .5em;
+    font-size: .7em;
+    font-weight: 900;
 }

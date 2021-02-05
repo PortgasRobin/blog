@@ -6,7 +6,7 @@ require_once 'dbconfig.php';
  FROM
  ARTICULOS a, AUTORES a2, REACCIONES r
  WHERE a.id_autor = a2.id_autor AND a.id_reaccion =r.id_reaccion 
- ORDER BY a.id_articulo desc limit 12";
+ ORDER BY a.id_articulo desc limit 4";
 /* 
 $query = "SELECT * FROM ARTICULOS"; */
  
