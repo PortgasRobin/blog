@@ -7,8 +7,6 @@ require_once 'dbconfig.php';
  ARTICULOS a, AUTORES a2, REACCIONES r
  WHERE a.id_autor = a2.id_autor AND a.id_reaccion =r.id_reaccion 
  ORDER BY a.id_articulo desc";
-/* 
-$query = "SELECT * FROM ARTICULOS"; */
  
  $stmt = $DBcon->prepare($query);
  $stmt->execute();
